@@ -1,2 +1,4 @@
 # Ignore intellij IDE settings
 .idea
+# Ignore pycache
+__pycache__

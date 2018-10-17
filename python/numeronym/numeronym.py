@@ -13,6 +13,8 @@ def numeronym(base):
   :param base: string Word to abbreviate.
   :return: string Abbreviation.
   """
+  if len(base) <= 2:
+    return base
   return "".join([base[0], str(len(base)-2), base[-1]])
 
 def main():

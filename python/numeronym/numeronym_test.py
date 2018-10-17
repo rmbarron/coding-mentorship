@@ -8,7 +8,8 @@ class TestNumeronym(unittest.TestCase):
 
   @parameterized.expand([
     ("word_internationalization", "internationalization", "i18n"),
-    ("word_localization", "localization", "l10n")
+    ("word_localization", "localization", "l10n"),
+    ("len_2", "at", "at")
   ])
   def test_numeronym(self, name, base, expected):
     got = numeronym.numeronym(base)
